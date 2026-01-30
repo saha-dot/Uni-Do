@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #E6E6E6;
+  color: #404E3B;
+}
+
+/* SHARED SCREEN WRAPPER */
+.screen {
+  max-width: 393px;
+  margin: auto;
+  padding: 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* LOGIN PAGE */
+.title {
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6C8480;
+  margin-bottom: 30px;
+}
+
+.hint {
+  text-align: center;
+  color: rgba(64,78,59,0.6);
+  margin-top: 30px;
+}
+
+/* TOP BAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.field {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  border: 1px solid #BAC8B1;
+  font-size: 16px;
+  background: #FFFFFF;
+  color: #404E3B;
+}
+
+/* BUTTON */
+.primary-btn {
+  width: 100%;
+  padding: 16px;
+  background: #7B9669;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-size: 20px;
+}
+
+/* TASK LIST */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: white;
+  padding: 16px;
+  border-radius: 18px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* DELETE */
+li button {
+  background: #7B9669;
+  border: none;
+  color: #ff4d6d;
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 6px 14px;
+}
+
+/* ===== DARK MODE ===== */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .field,
+.dark li {
+  background: #1e1e1e;
+  color: white;
+  border-color: #555;
+}
+
+.dark .subtitle,
+.dark .hint {
+  color: #ccc;
+}

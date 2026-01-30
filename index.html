@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uni-Do</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== LOGIN PAGE ========== -->
+<div id="loginPage" class="screen">
+  <h1 class="title">Welcome to<br>Uni-Do</h1>
+
+  <p class="subtitle">Login to your account</p>
+
+  <input class="field" type="text" placeholder="Username">
+  <input class="field" type="password" placeholder="Password">
+
+  <button class="primary-btn" onclick="login()">Login</button>
+
+  <p class="hint">One task at a time. You’ve got this…</p>
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<!-- ========== APP PAGE ========== -->
+<div id="appPage" class="screen hidden">
+
+  <header class="topbar">
+    <h1>Uni-Do</h1>
+    <input type="checkbox" onclick="toggleDark()">
+  </header>
+
+  <input id="taskInput" class="field" placeholder="Add a new task...">
+
+  <select id="priority" class="field">
+    <option value="high">High</option>
+    <option value="med" selected>Medium</option>
+    <option value="low">Low</option>
+  </select>
+
+  <button class="primary-btn" onclick="addTask()">Add Task</button>
+
+  <ul id="taskList"></ul>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
